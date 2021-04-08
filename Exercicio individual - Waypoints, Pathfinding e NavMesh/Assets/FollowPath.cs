@@ -45,6 +45,13 @@ public class FollowPath : MonoBehaviour
         currentWP = 0;
     }
 
+    //Local do mapa Industria
+    public void GoToIndustry()
+    {
+        g.AStar(currentNode, wps[4]);
+        currentWP = 0;
+    }
+
     //Calcular a movimentação por onde deseja
     private void LateUpdate()
     {
